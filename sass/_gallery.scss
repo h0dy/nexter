@@ -1,4 +1,68 @@
 .gallery {
-  background-color: var(--color-grey-dark-1);
+  background-color: var(--color-grey-light-1);
   grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+  grid-template-areas:
+    "gal-1  gal-1  gal-2  gal-2  gal-2  gal-3  gal-4  gal-4"
+    "gal-1  gal-1  gal-2  gal-2  gal-2  gal-3  gal-4  gal-4"
+    "gal-5  gal-5  gal-2  gal-2  gal-2  gal-8  gal-8  gal-9"
+    "gal-5  gal-5  gal-6  gal-6  gal-7  gal-8  gal-8  gal-9"
+    "gal-5  gal-5  gal-6  gal-6  gal-13 gal-13 gal-13 gal-9"
+    "gal-10 gal-11 gal-11 gal-12 gal-13 gal-13 gal-13 gal-14"
+    "gal-10 gal-11 gal-11 gal-12 gal-13 gal-13 gal-13 gal-14";
+  gap: 1.5rem;
+  padding: 1.5rem;
+  &__item {
+    &--1 {
+      grid-area: gal-1;
+    }
+    &--2 {
+      grid-area: gal-2;
+    }
+    &--3 {
+      grid-area: gal-3;
+    }
+    &--4 {
+      grid-area: gal-4;
+    }
+    &--5 {
+      grid-area: gal-5;
+    }
+    &--6 {
+      grid-area: gal-6;
+    }
+    &--7 {
+      grid-area: gal-7;
+    }
+    &--8 {
+      grid-area: gal-8;
+    }
+    &--9 {
+      grid-area: gal-9;
+    }
+    &--10 {
+      grid-area: gal-10;
+    }
+    &--11 {
+      grid-area: gal-11;
+    }
+    &--12 {
+      grid-area: gal-12;
+    }
+    &--13 {
+      grid-area: gal-13;
+    }
+    &--14 {
+      grid-area: gal-14;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 }
