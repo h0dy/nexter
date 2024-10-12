@@ -182,6 +182,40 @@ body {
 .footer {
   background-color: var(--color-secondary);
   grid-column: full-start/full-end;
+  padding: 8rem;
+}
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+.nav__link:link, .nav__link:visited {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-display);
+  text-align: center;
+  padding: 1.5rem;
+  display: block;
+  transition: all 0.2s;
+}
+.nav__link:link:hover, .nav__link:link:active, .nav__link:visited:hover, .nav__link:visited:active {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-0.5rem);
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: var(--color-grey-light-2);
+  margin-top: 6rem;
+  text-align: center;
+}
+.copyright__link:visited, .copyright__link:link {
+  color: white;
+  text-decoration: none;
 }
 
 .gallery {
