@@ -4,6 +4,9 @@
 }
 .heading-1 {
   @extend %heading;
+  font-size: 4.5rem;
+  color: var(--color-grey-light-1);
+  line-height: 1;
 }
 .heading-2 {
   @extend %heading;
@@ -44,14 +47,31 @@
   padding: 1.8rem 3rem;
   cursor: pointer;
   transition: all 0.2s;
+  outline: none;
 
+  &:link,
+  &:visited {
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 2.2rem;
+  }
   &:hover {
     background-color: var(--color-primary-dark);
   }
 }
 
-.mb-sm {margin-bottom: 2rem;}
-.mb-md {margin-bottom: 3rem;}
-.mb-lg {margin-bottom: 4rem;}
-.mb-hg {margin-bottom: 8rem;}
-
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 3rem;
+}
+.mb-lg {
+  margin-bottom: 4rem;
+}
+.mb-hg {
+  margin-bottom: 8rem;
+}
